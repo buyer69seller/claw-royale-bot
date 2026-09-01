@@ -6,7 +6,7 @@ load_dotenv()
 
 @dataclass(frozen=True)
 class Settings:
-    api_key: str = os.getenv("CLAW_API_KEY", "")
+    api_key: str = os.getenv("CLAW_API_KEY", "mr_live_5uFKB4CBSSaWNpbxpWaiyOteqg3JRhy2")
     api_base: str = os.getenv("CLAW_API_BASE", "https://cdn.clawroyale.ai/api")
     ws_join: str = os.getenv("CLAW_WS_JOIN", "wss://cdn.clawroyale.ai/ws/join")
     entry: str = os.getenv("CLAW_ENTRY", "free").lower()
